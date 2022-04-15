@@ -1,10 +1,10 @@
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
 metadata:
-  name: frontend-active
+  name: frontend
 spec:
   host: frontend-active
   subsets:
     - name: v1
       labels:
-        name: frontend-active
+        app: frontend
