@@ -8,5 +8,6 @@ resources:
   - virtualservice.yaml
   - frontend-deployment.yaml
   - blue-green.yaml
+  - destination-rule.yaml
 
 namespace: swan-front-blue-green

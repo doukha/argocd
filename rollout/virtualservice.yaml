@@ -12,5 +12,6 @@ spec:
       route:
         - destination:
             host: frontend-active
+            subset: v1
             port:
               number: 80
