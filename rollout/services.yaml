@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: frontend-active
+  type: ClusterIP
 spec:
   ports:
     - port: 80
@@ -17,6 +18,7 @@ kind: Service
 metadata:
   name: frontend-preview
 spec:
+  type: ClusterIP
   ports:
     - port: 80
       targetPort: 8080
