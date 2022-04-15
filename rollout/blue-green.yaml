@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1               # Create a rollout resource
+kind: Rollout
+metadata:
+  name: istio-rollout-bleu-green
+spec:
+  replicas: 3
+  workloadRef:                                 # Reference an existing Deployment using workloadRef field
+    apiVersion: apps/v1
+    kind: Deployment
+    name: rollouts-demo
+  strategy:
+    blueGreen:
+      autoPromotionEnabled: false
+      activeService: istio-rollout-active
+      previewService: istio-rollout-preview
+      previewReplicaCount: 2
+      scaleDownDelaySeconds: 90
+#      prePromotionAnalysis:
+#        templates:
+#          - templateName: smoke-tests
+#        args:
+#          - name: service-name
+#            value: preview-svc.default.svc.cluster.local

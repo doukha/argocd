@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: istio-rollout-active
+spec:
+  ports:
+    - port: 80
+      targetPort: 8080
+      protocol: TCP
+      name: http
+  selector:
+    app: istio-rollout
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: istio-rollout-preview
+spec:
+  ports:
+    - port: 80
+      targetPort: 8080
+      protocol: TCP
+      name: http
+  selector:
+    app: istio-rollout
