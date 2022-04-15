@@ -14,7 +14,7 @@ spec:
         app: frontend
     spec:
       containers:
-        - image: argoproj/rollouts-demo:red
+        - image: argoproj/rollouts-demo:purple
           name: rollouts-demo
           ports:
             - name: http
