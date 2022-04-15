@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1               # Create a rollout resource
 kind: Rollout
 metadata:
-  name: istio-rollout-bleu-green
+  name: frontend
 spec:
   replicas: 3
   workloadRef:                                 # Reference an existing Deployment using workloadRef field
     apiVersion: apps/v1
     kind: Deployment
-    name: rollouts-demo
+    name: frontend
   strategy:
     blueGreen:
       autoPromotionEnabled: false

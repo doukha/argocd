@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: rollouts-demo
+  name: frontend
 spec:
   replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: rollouts-demo
+      app: frontend
   template:
     metadata:
       labels:
-        app: rollouts-demo
+        app: frontend
     spec:
       containers:
         - image: argoproj/rollouts-demo:blue
