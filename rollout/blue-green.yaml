@@ -11,8 +11,8 @@ spec:
   strategy:
     blueGreen:
       autoPromotionEnabled: false
-      activeService: istio-rollout-active
-      previewService: istio-rollout-preview
+      activeService: frontend-active
+      previewService: frontend-preview
       previewReplicaCount: 2
       scaleDownDelaySeconds: 90
 #      prePromotionAnalysis:

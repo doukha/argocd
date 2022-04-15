@@ -6,7 +6,7 @@ resources:
   - gateway.yaml
   - services.yaml
   - virtualservice.yaml
-  - rollouts-demo-deployment.yaml
+  - frontend-deployment.yaml
   - blue-green.yaml
 
 namespace: swan-front-blue-green
