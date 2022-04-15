@@ -15,9 +15,9 @@ spec:
       previewService: frontend-preview
       previewReplicaCount: 2
       scaleDownDelaySeconds: 15
-      postPromotionAnalysis:
-        templates:
-        - templateName: success-rate
-        args:
-          - name: service-name
-            value: frontend-active.swan-front-blue-green.svc.cluster.local
+#      postPromotionAnalysis:
+#        templates:
+#        - templateName: success-rate
+#        args:
+#          - name: service-name
+#            value: frontend-active.swan-front-blue-green.svc.cluster.local
