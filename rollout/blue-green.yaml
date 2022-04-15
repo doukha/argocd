@@ -10,7 +10,7 @@ spec:
     name: frontend
   strategy:
     blueGreen:
-      autoPromotionEnabled: false
+#      autoPromotionEnabled: false
       activeService: frontend-active
       previewService: frontend-preview
       previewReplicaCount: 2
