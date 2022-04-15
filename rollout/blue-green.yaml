@@ -17,7 +17,7 @@ spec:
       scaleDownDelaySeconds: 15
 #      prePromotionAnalysis:
 #        templates:
-#          - templateName: smoke-tests
-#        args:
-#          - name: service-name
-#            value: preview-svc.default.svc.cluster.local
+#          - templateName: success-rate
+#          args:
+#            - name: service-name
+#              value: frontend-active.swan-front-blue-green.svc.cluster.local

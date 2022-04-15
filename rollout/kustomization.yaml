@@ -9,5 +9,6 @@ resources:
   - frontend-deployment.yaml
   - blue-green.yaml
   - destination-rule.yaml
+  - analysis.yaml
 
 namespace: swan-front-blue-green
