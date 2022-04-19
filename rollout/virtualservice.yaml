@@ -6,7 +6,7 @@ spec:
   gateways:
     - swan-front-blue-green/frontend
   hosts:
-    - frontend-active
+    - "*"
   http:
     - match:
       route:
