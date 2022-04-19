@@ -3,10 +3,10 @@ kind: VirtualService
 metadata:
   name: frontend
 spec:
-  hosts:
-    - "*"
   gateways:
     - swan-front-blue-green/frontend
+  hosts:
+    - frontend-active
   http:
     - match:
       route:
